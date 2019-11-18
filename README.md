@@ -12,7 +12,7 @@ Http knocking seems to work despite of network error and warnings about blocked 
 
 You can use websocket or http knocking functions
 
-Edit xPortKnock functions to achieve wanted portknocking sequence, timeout is in ms
+Edit xPortKnock functions to achieve wanted portknocking sequence, timeout is in ms (give at least 200ms)
 
 ```
 function wsKnock(ip,port,timeout){
@@ -34,7 +34,7 @@ function httpKnock(ip,port,delay) {
 }
 
 async function wsPortKnock(ip){
-    wsKnock(ip,10001,100).then(function(){});
+    wsKnock(ip,10001,200).then(function(){});
     wsKnock(ip,10002,500).then(function(){});
     wsKnock(ip,10003,900).then(function(){});
     wsKnock(ip,10004,1300).then(function(){});
@@ -42,8 +42,8 @@ async function wsPortKnock(ip){
     wsKnock(ip,10009,2000).then(function(){});
 }
 
-async function httpPortKnock(){
-    httpKnock(ip,20095,100);
+async function httpPortKnock(ip){
+    httpKnock(ip,20095,200);
     httpKnock(ip,20091,500);
     httpKnock(ip,20092,900);
     httpKnock(ip,20097,1300);
