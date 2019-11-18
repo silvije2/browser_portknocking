@@ -59,6 +59,6 @@ window.onload = function(){
 
 ## Authors
 
-* **jfriend00** modified from his example at stackoverflow
+* **jfriend00** [StackOverflow](https://stackoverflow.com/users/816620/jfriend00) modified from his example
 * **Silvije2** [Github](https://github.com/silvije2/)
 
