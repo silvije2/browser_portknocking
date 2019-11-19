@@ -4,7 +4,7 @@ Portknocking with javascript from browser
 
 # Why?
 
-Because. Simple javascript knocking was not good enough for me because of websocket opening connection too long timeout
+Because. Simple javascript knocking was not good enough for me because of websocket initial connection opening too long timeout
 
 Http knocking seems to work despite of network error and warnings about blocked content because of CORS request policies
 
